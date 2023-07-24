@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View , Dimensions} from 'react-native';
 import styles from './styles';
+import  Svg ,{Image} from 'react-native-svg';
 
 export default function App() {
+  const {height,width} = Dimensions.get("window")
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
     </View>
   );
 }
