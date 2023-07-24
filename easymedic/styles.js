@@ -1,11 +1,13 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet,Dimensions } from "react-native";
+import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry";
+const {height,width} = Dimensions.get("window");
 const styles = StyleSheet.create({
     container: {
       flex:1,
       justifyContent: "flex-end"
     },
     buttonContainer:{
-        marginBottom:100
+       height:height/2.5 
     },
     button:{
         backgroundColor: "green",
@@ -24,6 +26,39 @@ const styles = StyleSheet.create({
         fontSize:20,
         fontWeight:600,
         color:"#FFF"
+    },
+    loginContainer:{
+        backgroundColor: "#fff",
+        paddingTop:30,
+        paddingBottom:30,
+        alignItems:"center"
+    },
+    textInput:{
+        height:40,
+        borderWidth:1,
+        borderColor:"green",
+        paddingLeft:20,
+        marginTop:15,
+        width: 300,
+        borderRadius:5
+
+    },
+    formButton:{
+        backgroundColor:"green",
+        width:300,
+        borderRadius:5,
+        paddingTop:5,
+        paddingBottom:5,
+        marginTop:20,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.7,
+        shadowRadius: 7.49,
+
+        elevation: 12,
     }
   });
 

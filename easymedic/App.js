@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View , Dimensions} from 'react-native';
+import { StyleSheet, Text, View , Dimensions,TextInput} from 'react-native';
 import styles from './styles';
 import  Svg ,{Image} from 'react-native-svg';
 
@@ -15,11 +15,20 @@ export default function App() {
         </Svg>
       </View>
       <View style={styles.buttonContainer}>
-        <View style={styles.button}>
+        {/* <View style={styles.button}>
           <Text style={styles.buttonText}>LOGIN</Text>
         </View>
         <View style={styles.button}>
           <Text style={styles.buttonText}>REGISTER</Text>
+        </View> */}
+        <View style={styles.loginContainer}>
+          <Text>Enter Your Details</Text>
+          <TextInput placeholder='Full Name:' style={styles.textInput}/>
+          <TextInput placeholder='Email:' style={styles.textInput}/>
+          <TextInput placeholder='Password:' style={styles.textInput}/>
+          <View style={styles.formButton}>
+            <Text style={styles.buttonText}>LOGIN</Text>
+          </View>
         </View>
       </View>
     </View>
