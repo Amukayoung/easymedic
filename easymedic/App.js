@@ -13,6 +13,7 @@ export default function App() {
           height={height} 
           preserveAspectRatio='xMidyMid slice'/>
         </Svg>
+       
       </View>
       <View style={styles.buttonContainer}>
         {/* <View style={styles.button}>
@@ -21,7 +22,11 @@ export default function App() {
         <View style={styles.button}>
           <Text style={styles.buttonText}>REGISTER</Text>
         </View> */}
+        
         <View style={styles.loginContainer}>
+        <View style={styles.closeButton}>
+          <Text style={styles.xText}>X</Text>
+        </View>
           <Text>Enter Your Details</Text>
           <TextInput placeholder='Full Name:' style={styles.textInput}/>
           <TextInput placeholder='Email:' style={styles.textInput}/>

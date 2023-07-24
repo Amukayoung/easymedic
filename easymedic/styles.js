@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
       justifyContent: "flex-end"
     },
     buttonContainer:{
-       height:height/2.5 
+       height:height/2.3 
     },
     button:{
         backgroundColor: "green",
@@ -59,6 +59,28 @@ const styles = StyleSheet.create({
         shadowRadius: 7.49,
 
         elevation: 12,
+    },
+    closeButton:{
+        backgroundColor:"#fff",
+        alignSelf:"center",
+        justifyContent:"center",
+        height:40,
+        width:40,
+        borderRadius:20,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.7,
+        shadowRadius: 7.49,
+
+        elevation: 12,
+
+    },
+    xText:{
+        color:"green",
+        alignSelf:"center"
     }
   });
 
